@@ -1,0 +1,150 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-dec-2015, 14:30:02
+    Author     : Brookhuis
+*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #3c3c3c;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0.6em;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+p{
+    margin-bottom: 0.6em;
+}
+
+/*
+    Pagina opzet
+*/
+#pageHeader, #pageMenu, #pageContent, #pageFooter{
+    width: 100%;
+}
+
+#pageHeader{
+    height: 160px;
+    background-color: #9a2828;
+    background-color: #a03636;
+}
+
+#pageMenu, #pageMenuFake{
+    height: 50px;
+    background-color: #bf3d3d;
+    border-top: 4px solid #5a5a5a;
+    border-bottom: 4px solid #5a5a5a;
+}
+
+#pageMenuFake{
+    display: none;
+}
+
+#pageContent{
+}
+
+#pageFooter{
+    border-top: 4px solid #5a5a5a;
+    background-color: #bf3d3d;
+}
+
+#header, #menu, #content, #footer{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#header{
+    
+}
+
+#menu{
+    
+}
+
+#content{
+    clear: both;
+    min-height: 800px;
+    background-color: white;
+    padding: 15px;
+}
+
+#footer{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    height: 35px;
+}
+
+
+/*
+    Header
+*/
+#header h1{
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: white;
+    font-size: 55pt;
+    width: auto;
+}
+
+
+/*
+    Menu
+*/
+.menuLi{
+    float: left;
+    font-size: 15pt;
+    line-height: 50px;
+    padding: 0 30px;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+
+#li_showcase{
+    position: relative;
+}
+
+.showcaseMenuLi{
+    list-style-type: none;
+}
+
+.showcaseMenuUl{
+    background-color: #bf3d3d;
+    position: absolute;
+    padding: 0px 15px;
+    border: 4px solid #5a5a5a;
+    border-top: none;
+    display: none;
+}
+
+#menuSearchDiv{
+    float: right;
+}
+
+#menuSearchBox{
+    margin-top: 10px;
+    height: 30px;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+#menuSearchIcon{
+}
