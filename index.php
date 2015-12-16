@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <!--
 TODO:
-
+- Pagina's toevoegen
+- Content home toevoegen
+- DB spul?
 -->
 <html>
     <head>
@@ -13,38 +15,15 @@ TODO:
         <script src="header.js"></script>
     </head>
     <body>
-        <div id="pageHeader">
-            <div id="header">
-                <h1>Portfolio</h1>
-            </div>
-        </div>
-        <!--    TODO: Maak dit sticky     -->
-        <div id="pageMenuFake"></div>
-        <div id="pageMenu">
-            <div id="menu">
-                <ul id="menuUl">
-                    <li class="menuLi"><a href="#">Home</a></li>
-                    <li id="li_showcase" class="menuLi"><a href="#">Showcase</a>
-                        <ul class="showcaseMenuUl">
-                            <li class="showcaseMenuLi"><a href="#">Item 1</a></li>
-                            <li class="showcaseMenuLi"><a href="#">Portfolio Systeem</a></li>
-                            <li class="showcaseMenuLi"><a href="#">Item 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="menuLi"><a href="#">Over</a></li>
-                    <li class="menuLi"><a href="#">Contact</a></li>
-                </ul>
-                <div id="menuSearchDiv">
-                    <input id="menuSearchBox" type="text" name="searchField" placeholder="search">
-                    <img id="menuSearchIcon" src="images/icon-search,png" alt="search icon">
-                </div>
-            </div>
-        </div>
+        <?php 
+        include 'inc/header.php';
+        include 'inc/menu.php';
+        ?>
         <div id="pageContent">
             <div id="content">
                 <h1>HEADER</h1>
                 <p>Tekst</p>
-                <p>Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst </p>
+                <p>Tekst Tekst <a href="http://google.com">Dit is een link</a> Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst </p>
                 <p>Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst Tekst </p>
                 
                 <h2>H2</h2>
@@ -69,10 +48,8 @@ TODO:
                 
             </div>
         </div>
-        <div id="pageFooter">
-            <div id="footer">
-                <p>&copy; Wouter Brookhuis - 2015</p>
-            </div>
-        </div>
+        <?php
+        include 'inc/footer.php';
+        ?>
     </body>
 </html>
