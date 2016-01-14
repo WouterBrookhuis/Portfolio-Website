@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <!--
-TODO: Content toevoegen
-
+TODO:
+- Pagina's toevoegen
+- Content home toevoegen
+- DB spul?
 -->
 <html>
     <head>
-        <title>Portfolio Systeem - Wouter Brookhuis</title>
+        <title>Over - Wouter Brookhuis</title>
         <meta charset="UTF-8">
         <!-- Mobile phone 'support' -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +23,12 @@ TODO: Content toevoegen
         ?>
         <div id="pageContent">
             <div id="content">
-                <h1>Portfolio Systeem</h1>
-                <img src="images/test-image.jpg" alt="test image">
-                <p>Een stel koeien</p>
-                <p>Het project portfolio systeem was blablabla blab bla blabala bla aa</p>
+                <h1>Over</h1>
+                <p>[TODO: Write bio]</p>
+                <?php
+                $cvLink = file_get_contents("http://ons-portfolio.nl/getmaterial.php?material=31");
+                echo '<p><a href="http://ons-portfolio.nl/' . $cvLink . '">Download CV</a></p>';
+                ?>
             </div>
         </div>
         <?php

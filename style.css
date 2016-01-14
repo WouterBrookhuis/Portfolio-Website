@@ -10,7 +10,6 @@ and open the template in the editor.
 *{
     margin: 0;
     padding: 0;
-    
 }
 body{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -167,3 +166,18 @@ a{
 #content img{
     max-width: 100%;
 }
+
+/*
+    Contact
+*/
+.contactTable{
+    text-align: left;
+}
+
+.contactTable td, th{
+    padding: 2px;
+}
+
+/*
+    Over
+*/
