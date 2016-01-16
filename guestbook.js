@@ -164,6 +164,10 @@ function submitGuestbookFormReciever(data)
     }
     else if(data === 'success')
     {
+		//Reset form
+	    $("input[name='name']").val('');
+        $("input[name='mail']").val('');
+        $("textarea[name='message']").val('');
         document.getElementById('guestbookFormError').innerHTML = "Uw bericht is geplaatst";
         //New message is always on page 0
         pageCurrent = 0;
