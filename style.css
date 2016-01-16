@@ -181,3 +181,58 @@ a{
 /*
     Over
 */
+
+/*
+    Gasten
+*/
+.guestbookEntry{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 150px;
+    color: white;
+    background-color: #bf3d3d;
+    padding: 10px;
+    overflow: auto;
+}
+
+.guestbookTitle{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#guestbookForm textarea{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+}
+
+#guestbookFormError{
+    font-size: 15pt;
+}
+
+/*
+    Index/projecten lijst
+*/
+.projectBox{
+    box-sizing: border-box;
+    border: 1px solid white;
+    float: left;
+    min-height: 200px;
+    background-color: #bf3d3d;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.projectBox h3{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.projectBox img{
+    max-height: 130px;
+}
+
+#projectBoxClear{
+    clear: both;
+}

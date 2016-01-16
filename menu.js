@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-var doStuff;
 var minMenuWidth = 0.0;
 var menuNormalTop;
 var shouldShowShowcaseMenu = false;

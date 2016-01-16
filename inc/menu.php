@@ -11,6 +11,7 @@
                 </ul>
             </li>
             <li class="menuLi"><a href="over.php">Over</a></li>
+            <li class="menuLi"><a href="gasten.php">Gastenboek</a></li>
             <!--<li class="menuLi"><a href="contact.php">Contact</a></li>-->
         </ul>
     </div>

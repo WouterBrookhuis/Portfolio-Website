@@ -15,6 +15,7 @@ TODO:
         <script src="jquery-1.11.3.min.js"></script>
         <script src="menu.js"></script>
         <script src="header.js"></script>
+        <script src="guestbook.js"></script>
     </head>
     <body>
         <?php 
@@ -24,44 +25,17 @@ TODO:
         <div id="pageContent">
             <div id="content">
                 <h1>Gastenboek</h1>
-                <p>[TODO: Write bio]</p>
-                <?php
-                function portfolio_connect()
-                {
-                    $dbConnect = mysqli_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS, DATABASE_NAME, MYSQL_PORT);
-                    if($dbConnect !== false)
-                    {
-                        $db = mysqli_select_db($dbConnect, DATABASE_NAME);
-                        if($db === false)
-                        {
-                            echo "<p>Unable to connect to the database server.</p>";
-                            echo "<p>" . mysqli_error($dbConnect) . "</p>";
-                            mysqli_close($dbConnect);
-                            $dbConnect = false;
-                        }
-                    }
-                    else
-                    {
-                        echo "<p>Unable to connect to the database server.</p>";
-                    }
-                    return $dbConnect;
-                }
-                function portfolio_get_messages($ontvangerId)
-                {
-                    $link = portfolio_connect();
-                    if($link)
-                    {
-                        
-                    }
-                    return null;
-                }
-                
-                $msgs = portfolio_get_messages(2);
-                foreach($msgs as $msg)
-                {
-                    
-                }
-                ?>
+                <div id="guestbookForm">
+                    <p>Plaats een nieuw bericht</p>
+                    <p id="guestbookFormError"></p>
+                    <p>Naam <input type="text" name="name"> Email <input type="email" name="mail"></p>
+                    <p>Bericht<br><textarea rows="6" name="message"></textarea></p>
+                    <p><button onclick="submitGuestbookForm()">Submit</button></p>
+                </div>
+                <hr>
+                <div id="guestbook">
+                    <!-- gastenboek berichten komen in deze div -->
+                </div>
             </div>
         </div>
         <?php
