@@ -29,19 +29,14 @@ TODO:
                 
                 <div id="projects">
                     <?php
-                    for($i = 0; $i < 4; $i++)
-                    {?>
-                    <div class="projectBox">
-                        <h3>Portfolio Systeem</h3>
-                        <img src="images/test-image.png" alt="test image">
-                        <p>Korte beschrijving van project, welke ook best lang kan zijn</p>
-                    </div>
-                    <div class="projectBox">
-                        <h3>Portfolio</h3>
-                        <img src="images/test-image.jpg" alt="test image">
-                        <p>Korte beschrijving van project</p>
-                    </div>
-                    <?php
+                    for($i = 0; $i < count($projectsArray); $i++){
+                        echo '<a href="' . prlink($projectsArray[$i]['name']) . '">';
+                            echo '<div class="projectBox">';
+                                echo '<h3>' . $projectsArray[$i]['name'] . '</h3>';
+                                echo '<img src="' . $projectsArray[$i]['image'] . '" alt="test image">';
+                                echo '<p>' . $projectsArray[$i]['shortText'] . '</p>';
+                            echo '</div>';
+                        echo '</a>';
                     }
                     ?>
                     <div id="projectBoxClear"></div>

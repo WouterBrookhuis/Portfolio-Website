@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+//Lower values will break things.
 var desiredGridWidth = 4;
 var gridMinWidth = 970;
 
@@ -17,15 +18,17 @@ $(document).ready(function(){
     $(window).resize(calcGridSize);
 
     calcGridSize();
+    //First pass doesn't always work, so do it again
+    calcGridSize();
 });
 
 function calcGridSize()
 {
     var maxBoxHeight = 0;
     var maxBoxCount = Math.floor($("#projects").width() / (gridMinWidth / desiredGridWidth));
-    console.log(maxBoxCount);
+    //console.log(maxBoxCount);
     var boxWidthPercent = 100 / maxBoxCount;
-    console.log(boxWidthPercent);
+    //console.log(boxWidthPercent);
     $(".projectBox").each(function(){
         $(this).removeAttr('style');
         $(this).css('width', boxWidthPercent + '%');
@@ -36,5 +39,4 @@ function calcGridSize()
     $(".projectBox").each(function(){
         $(this).css('height', maxBoxHeight + 'px');
     });
-
 }

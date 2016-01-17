@@ -59,7 +59,7 @@ function addPageButtons()
 
 function updatePageMessages()
 {
-    console.log(url);
+    //console.log(url);
     $.post(url, { action: "get", userId: userId }, updatePageMessagesProcessor, "json");
 }
 
@@ -75,13 +75,13 @@ function updatePage(data)
     while (gbNode.firstChild) {
         gbNode.removeChild(gbNode.firstChild);
     }
-    console.log(data);
+    //console.log(data);
     if(data.length > 0)
     {
         if(data.length > pageMaxLength)
         {
             pageCount = Math.ceil(data.length / pageMaxLength);
-            console.log('Page count ' + pageCount);
+            //console.log('Page count ' + pageCount);
             addPageButtons();   //Top
             for(var i = pageCurrent * pageMaxLength; (i < data.length && i < pageCurrent * pageMaxLength + pageMaxLength); i++)
             {
@@ -125,11 +125,11 @@ function createMessageHTML(messageArray)
 
 function submitGuestbookForm()
 {
-    console.log("user submitted form");
+    //console.log("user submitted form");
     var name = $("input[name='name']").val();
     var mail = $("input[name='mail']").val();
     var message = $("textarea[name='message']").val();
-    console.log("name: " + name + " mail: " + mail + " message: " + message);
+    //console.log("name: " + name + " mail: " + mail + " message: " + message);
     if(!name.match(/^\s*$/) && !mail.match(/^\s*$/) && !message.match(/^\s*$/))
     {
         $.post(url, { action: "add", userId: userId, name: name, mail: mail, message: message }, submitGuestbookFormReciever, "json");

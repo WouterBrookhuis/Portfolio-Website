@@ -13,7 +13,7 @@ var showcaseMenuItems;
 $(document).ready(function(){
     $(".menuLi").each(function(){
         minMenuWidth += $(this).outerWidth();
-        console.log( $(this).outerWidth());
+        //console.log( $(this).outerWidth());
     });
     menuNormalHeight = $("#pageMenu").height();
     menuNormalTop = $("#pageMenu").offset().top;

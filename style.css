@@ -123,6 +123,12 @@ a{
     text-decoration: none;
 }
 
+#menu p{
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
 #li_showcase{
     position: relative;
 }
@@ -223,6 +229,11 @@ a{
     padding: 5px;
     text-align: center;
     color: white;
+}
+
+.projectBox a{
+    color: white;
+    text-decoration: none;
 }
 
 .projectBox h3{
