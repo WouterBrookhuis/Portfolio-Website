@@ -43,16 +43,16 @@ function prevPage()
 function addPageButtons()
 {
     var p = document.createElement('p');
-    p.innerHTML = 'Page ' + (pageCurrent + 1) + ' of ' + pageCount;
+    p.appendChild(document.createTextNode('Page ' + (pageCurrent + 1) + ' of ' + pageCount));
     document.getElementById("guestbook").appendChild(p);
     
     var button = document.createElement('button');
-    button.innerHTML = 'Previous page';
+    button.appendChild(document.createTextNode('Previous page'));
     button.onclick = prevPage;
     document.getElementById("guestbook").appendChild(button);
     
     button = document.createElement('button');
-    button.innerHTML = 'Next page';
+    button.appendChild(document.createTextNode('Next page'));
     button.onclick = nextPage;
     document.getElementById("guestbook").appendChild(button);
 }
@@ -114,11 +114,11 @@ function createMessageHTML(messageArray)
     block.className = "guestbookEntry";
     var name = document.createElement('h3');
     name.className = "guestbookTitle";
-    name.innerHTML = messageArray["zendernaam"];
+    name.textContent = messageArray["zendernaam"];
     block.appendChild(name);
     var msg = document.createElement('p');
     msg.className = "guestbookMessage";
-    msg.innerHTML = messageArray["bericht"];
+    msg.textContent = messageArray["bericht"];
     block.appendChild(msg);
     document.getElementById('guestbook').appendChild(block);
 }
@@ -136,7 +136,7 @@ function submitGuestbookForm()
     }
     else
     {
-        document.getElementById('guestbookFormError').innerHTML = "Vul aub alle velden in";
+        document.getElementById('guestbookFormError').textContent = "Vul aub alle velden in";
     }
 }
 
@@ -146,19 +146,19 @@ function submitGuestbookFormReciever(data)
     {
         switch(data.error){
             case 'name':{
-                document.getElementById('guestbookFormError').innerHTML = "Naam te lang, maximaal 35 tekens";
+                document.getElementById('guestbookFormError').textContent = "Naam te lang, maximaal 35 tekens";
                 break;
             }
             case 'mail':{
-                document.getElementById('guestbookFormError').innerHTML = "Vul een geldig email adres in";
+                document.getElementById('guestbookFormError').textContent = "Vul een geldig email adres in";
                 break;
             }
             case 'message':{
-                document.getElementById('guestbookFormError').innerHTML = "Bericht te lang, maximaal 700 tekens";
+                document.getElementById('guestbookFormError').textContent = "Bericht te lang, maximaal 700 tekens";
                 break;
             }
             default: {
-                document.getElementById('guestbookFormError').innerHTML = "Er is een fout opgetreden";
+                document.getElementById('guestbookFormError').textContent = "Er is een fout opgetreden";
             }
         }
     }
@@ -168,7 +168,7 @@ function submitGuestbookFormReciever(data)
 	    $("input[name='name']").val('');
         $("input[name='mail']").val('');
         $("textarea[name='message']").val('');
-        document.getElementById('guestbookFormError').innerHTML = "Uw bericht is geplaatst";
+        document.getElementById('guestbookFormError').textContent = "Uw bericht is geplaatst";
         //New message is always on page 0
         pageCurrent = 0;
         updatePageMessages();
