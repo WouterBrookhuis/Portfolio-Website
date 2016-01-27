@@ -9,6 +9,7 @@ var menuNormalTop;
 var shouldShowShowcaseMenu = false;
 var showcaseMenuList;
 var showcaseMenuItems;
+var targetContentMinHeight = 0;
 
 $(document).ready(function(){
     $(".menuLi").each(function(){
@@ -44,13 +45,23 @@ $(document).ready(function(){
     $(window).resize(function(){    
         calcMenuSize();
         calcMenuPosition();
+        updateContentMinHeight();
     });
     $(window).scroll(calcMenuPosition);
 
     
     calcMenuSize();
     calcMenuPosition();
+    updateContentMinHeight();
 });
+
+function updateContentMinHeight()
+{
+    var h = window.innerHeight;
+    targetContentMinHeight = (h - $("#pageHeader").outerHeight() - $("#pageMenu").outerHeight() - $("#pageFooter").outerHeight());
+    console.log(targetContentMinHeight);
+    $("#content").css("min-height", targetContentMinHeight + "px");
+}
 
 function calcMenuSize()
 {
