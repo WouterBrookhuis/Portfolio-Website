@@ -12,10 +12,10 @@ TODO:
         <!-- Mobile phone 'support' -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="jquery-1.11.3.min.js"></script>
-        <script src="menu.js"></script>
-        <script src="header.js"></script>
-        <script src="guestbook.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/guestbook.js"></script>
     </head>
     <body>
         <?php 

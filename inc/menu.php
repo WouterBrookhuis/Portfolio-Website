@@ -5,9 +5,8 @@ include_once 'projects.php';
 <div id="pageMenu">
     <div id="menu">
         <ul id="menuUl">
-            <li class="menuLi"><a href="index.php">Home</a></li>
             <!-- TODO: Showcase gaat naar eerste child -->
-            <li id="li_showcase" class="menuLi"><p>Projecten</p>
+            <li id="li_showcase" class="menuLi"><a href="index.php">Projecten</a>
                 <ul class="showcaseMenuUl">
                     <?php
                     for($i = 0; $i < count($projectsArray); $i++){
@@ -18,7 +17,6 @@ include_once 'projects.php';
             </li>
             <li class="menuLi"><a href="over.php">Over</a></li>
             <li class="menuLi"><a href="gasten.php">Gastenboek</a></li>
-            <!--<li class="menuLi"><a href="contact.php">Contact</a></li>-->
         </ul>
     </div>
 </div>
