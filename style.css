@@ -190,7 +190,18 @@ a{
 */
 
 #aboutTextArea{
+    padding: 5px;
+    float: left;
     max-width: 600px;
+}
+#aboutImage{
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 180px;
+    float: left;
+}
+#aboutEnd{
+    clear: both;
 }
 
 /*

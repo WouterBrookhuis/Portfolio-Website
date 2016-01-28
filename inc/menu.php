@@ -5,7 +5,6 @@ include_once 'projects.php';
 <div id="pageMenu">
     <div id="menu">
         <ul id="menuUl">
-            <!-- TODO: Showcase gaat naar eerste child -->
             <li id="li_showcase" class="menuLi"><a href="index.php">Projecten</a>
                 <ul class="showcaseMenuUl">
                     <?php
@@ -17,6 +16,7 @@ include_once 'projects.php';
             </li>
             <li class="menuLi"><a href="over.php">Over</a></li>
             <li class="menuLi"><a href="gasten.php">Gastenboek</a></li>
+            <!-- Geen login menu item, want daar heb ik niks aan -->
         </ul>
     </div>
 </div>

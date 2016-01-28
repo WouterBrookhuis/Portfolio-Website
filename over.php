@@ -24,17 +24,23 @@ TODO:
         <div id="pageContent">
             <div id="content">
                 <h1>Over</h1>
+                <div id="aboutImage">
+                    <img src="http://ons-portfolio.nl/getimg.php?name=Avatar_Wouter" alt="foto">
+                </div>
                 <div id="aboutTextArea">
                     <p>Mijn naam is Wouter Brookhuis. Ik ben een 18 jarige student informatica aan de Stenden Hogeschool.
-                        Ik ben in 2015 aan deze opleiding begonnen en projecten waar ik aan gewerkt heb zijn op deze site te vinden.</p>
+                        Voordat ik op Stenden begonnen ben heb ik VWO gedaan op het Vechtdal College in Hardenberg.
+                        Ik ben in 2015 op Stenden begonnen en projecten waar ik aan gewerkt heb zijn op deze site te vinden.</p>
 
                     <p>Meer weten? Hier kan je
                     <?php
-                    $cvLink = file_get_contents("http://ons-portfolio.nl/getmaterial.php?material=31");
+                    $cvMatId = 31;
+                    $cvLink = file_get_contents("http://ons-portfolio.nl/getmaterial.php?material=" . $cvMatId);
                     echo '<a href="http://ons-portfolio.nl/' . $cvLink . '">mijn cv downloaden.</a>';
                     ?>
                     </p>
                 </div>
+                <div id="aboutEnd"></div>
             </div>
         </div>
         <?php
