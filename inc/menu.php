@@ -14,6 +14,7 @@ include_once 'projects.php';
                     ?>
                 </ul>
             </li>
+            <li class="menuLi"><a href="vakken.php">Vakken</a></li>
             <li class="menuLi"><a href="over.php">Over</a></li>
             <li class="menuLi"><a href="gasten.php">Gastenboek</a></li>
             <!-- Geen login menu item, want daar heb ik niks aan -->
