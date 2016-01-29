@@ -24,7 +24,13 @@ TODO:
         <div id="pageContent">
             <div id="content">
                 <h1>Vakken</h1>
-                <p>Content nog niet beschikbaar</p>
+                <h3>Op Stenden heb ik de volgende vakken gevolgd</h3>
+                <p>(X)HTML & CSS</p>
+                <p>PHP</p>
+                <p>Databases</p>
+                <p>Digital Graphics Design</p>
+                <p>Informatiemanagement</p>
+                <p>Mondelinge Communicatie</p>
             </div>
         </div>
         <?php
