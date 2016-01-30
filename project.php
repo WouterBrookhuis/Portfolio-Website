@@ -1,4 +1,7 @@
 <?php
+include_once 'inc/pfmanage.php';
+?>
+<?php
 include_once 'inc/projects.php';
 $project = null;
 $projectData = null;

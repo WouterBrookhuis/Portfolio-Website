@@ -1,6 +1,3 @@
-<?php
-include_once 'projects.php';
-?>
 <div id="pageMenuFake"></div>
 <div id="pageMenu">
     <div id="menu">
